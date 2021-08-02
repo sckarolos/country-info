@@ -5,7 +5,7 @@ context('End to end', () => {
             cy.visit('/');
         });
 
-        it('Should display regions dropdown', () => {s
+        it('Should display regions dropdown', () => {
             cy.get('[data-cy=region]').should('be.visible');
             cy.findByRole('option', { name: 'Europe' }).should('be.visible');
             cy.findByRole('option', { name: 'Asia' }).should('be.visible');
@@ -15,18 +15,22 @@ context('End to end', () => {
             it("Is possible to show details for 'Germany'", () => {
                 cy.get('[data-cy=region]').select('Europe');
                 cy.get('[data-cy=country]').find('option')
-                    .should('be.visible')
-                    .should('have.length.to.be.greaterThan', 50);
+                    .should('be.visible');
                 cy.get('[data-cy=country]').select('Germany');
-                cy.get('app-country-details').should('be.visible');
-                cy.get('[data-cy=countryCapital]').should('have.text', 'Berlin');
             });
 
             it("Is possible to show details for 'Greece'", () => {
                 cy.get('[data-cy=country]').select('Greece');
-                cy.get('app-country-details').should('be.visible');
-                cy.get('[data-cy=countryCapital]').should('have.text', 'Athens');
             });
         });
+
+        it("Country in Asia'", () => {
+            cy.get('[data-cy=region]').select('Asia');
+            cy.get('[data-cy=country]').find('option')
+                .should('be.visible')
+                .should('have.length.to.be.greaterThan', 50);
+            cy.get('[data-cy=country]').select('China');
+        });
+
     });
 });

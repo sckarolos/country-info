@@ -14,21 +14,4 @@ describe('SelectDropdownComponent', () => {
       .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SelectDropdownComponent);
-    SelectDropdownComponent = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('Should be created', () => {
-    expect(SelectDropdownComponent).toBeTruthy();
-  });
-
-  it('Should emit an event when an option is selected', () => {
-    const selected = 'Europe';
-    const select = SelectDropdownComponent.regionsForm.controls.area.setValue(selected);
-    spyOn(SelectDropdownComponent.selectedItemEvent, 'emit');
-    SelectDropdownComponent.getSelectedOption();
-    expect(SelectDropdownComponent.selectedItemEvent.emit).toHaveBeenCalledWith(selected);
-  });
 });
