@@ -89,4 +89,4 @@ ng e2e
 
 [Components vs Presentational Components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)
 
-[Angular coding standards])(https://angular.io/guide/styleguide)
+[Angular coding standards](https://angular.io/guide/styleguide)
