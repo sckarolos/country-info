@@ -1,4 +1,4 @@
-# Godaddy Git Repos Angular Application
+# Country Information Angular App
 A basic responsive web application developed using <b>Angular 12</b>, <b>NgRx</b>, <b>SCSS</b> and <b>Bootstrap</b>.  
 
 ## This application: 
@@ -85,4 +85,7 @@ ng e2e
 ## References / Patterns to follow
 
 [Angular Releases and Versioning](https://angular.io/guide/releases)
+
 [Components vs Presentational Components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)
+
+[Angular coding standards])(https://angular.io/guide/styleguide)
