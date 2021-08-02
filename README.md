@@ -78,7 +78,7 @@ ng e2e
 
 - Change the way button toggles. Implement alternative solution when button is always enabled. Use switchMap operator on repeated button clicks.
 - Remove all logic from presentation components (Smart Components vs Presentational Components)
-- Add extensive unit and e2e tests across all components.
+- Fix commented out unit test. Add extensive unit and e2e tests across all components.
 - Accessibility (use of screen readers, font sizes should be based on  ) can be improved.  
 - Replace tslint with prettier-eslint. 
 - Create separate SCSS file for variables. 
