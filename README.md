@@ -80,6 +80,7 @@ ng e2e
 - Remove all logic from presentation components (Smart Components vs Presentational Components)
 - Add extensive unit and e2e tests across all components.
 - Accessibility (use of screen readers, font sizes should be based on  ) can be improved.  
+- Replace tslint with prettier-eslint. 
 - Create separate SCSS file for variables. 
 
 ## References / Patterns to follow
