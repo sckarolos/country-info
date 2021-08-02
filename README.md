@@ -1,4 +1,4 @@
-# Country Information Angular Application
+# Godaddy Git Repos Angular Application
 A basic responsive web application developed using <b>Angular 12</b>, <b>NgRx</b>, <b>SCSS</b> and <b>Bootstrap</b>.  
 
 ## This application: 
@@ -49,7 +49,7 @@ ng e2e
 
 <kbd>
 
-  ![Capture](https://github.com/sckarolos/country-info/tree/main/src/assets/screenshot.png)
+  ![Capture](https://github.com/sckarolos/country-info/blob/main/src/assets/screenshot.png)
 
 </kbd>
 
@@ -70,7 +70,7 @@ ng e2e
 - Folder structure:
 <kbd>
 
-  ![Capture](https://github.com/sckarolos/country-info/tree/main/src/assets/fstructure.png)
+  ![Capture](https://github.com/sckarolos/country-info/blob/main/src/assets/fstructure.png)
 
 </kbd> 
 
