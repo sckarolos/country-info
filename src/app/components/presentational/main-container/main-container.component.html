@@ -1,0 +1,30 @@
+<div class="title mt-large">
+    <h3>Region and Country Information</h3>
+</div>
+
+<div class="mt-small">
+    <app-select-dropdown
+        [dropDownData]="regions$ | async"
+        [actionType]="'region'"
+        (selectedItemEvent)="selectRegion($event)">
+    </app-select-dropdown>
+</div>
+
+<div class="mt-small">
+    <app-select-dropdown
+        [dropDownData]="countryList$ | async"
+        [actionType]="'country'"
+        (selectedItemEvent)="selectCountry($event)">
+    </app-select-dropdown>
+</div>
+
+<div class="button-container mt-medium" *ngIf="showButton">
+    <button (click)="onButtonPress()" [disabled]="isDisabled" class="btn btn-primary">Display Country details</button>
+</div>
+
+<div class="country-details-container mt-medium" *ngIf="showDetails">
+    <app-country-details
+        [countryDetails]="selectedCountry$ | async"
+        [selectedOption]="currentCountry">
+    </app-country-details>  
+</div>

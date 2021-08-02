@@ -1,0 +1,9 @@
+<div *ngIf="dropDownData && dropDownData.length !== 0">
+    <form [formGroup]="regionsForm">
+        <label [attr.for]="actionType" class="label">{{ actionType | titlecase }}: </label>
+        <select class="form-select" aria-label="Default select example" (change)="getSelectedOption()" formControlName="area" [attr.name]=actionType [attr.data-cy]=actionType >
+            <option value="" hidden>Select</option>
+            <option *ngFor="let item of dropDownData" [value]="item.name">{{item.name}}</option>
+        </select>
+    </form>
+</div>

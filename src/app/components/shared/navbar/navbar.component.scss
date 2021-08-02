@@ -1,0 +1,22 @@
+@import "../../../../styles.scss";
+
+.navbar-bg {
+    background-color: $base-bg-color;
+}
+
+.navbar-custom a {
+    color: $base-white;
+}
+
+.nav-item a {
+    color: $base-black;
+}
+
+.git-button {
+    font-weight: $bold-font-weight;
+}
+
+span {
+    color: $base-white;
+    font-family: $base-font-family;
+}

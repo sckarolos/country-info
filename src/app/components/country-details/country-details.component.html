@@ -1,0 +1,26 @@
+<div class="table-responsive">
+  <table class="table align-middle">
+      <thead>
+        <tr>
+          <th scope="col">Name:</th>
+          <th scope="col">Capital</th>
+          <th scope="col">Population</th>
+          <th scope="col">Currencies</th>
+          <th scope="col">Flag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{countryDetails.name}}</td>
+          <td>{{countryDetails.capital}}</td>
+          <td>{{countryDetails.population | number:'1.0-0'}}</td>
+          <td>
+              <div *ngFor="let item of countryDetails.currencies">
+                  <span>{{item.name || 'Currency not found'}} ({{item.symbol || 'Symbol not found'}})</span>
+              </div>
+          </td>
+          <td><img height="40" width="50" class="flag" [src]="countryDetails.flag" /></td>
+        </tr>
+      </tbody>
+  </table>
+</div>

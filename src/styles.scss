@@ -1,0 +1,33 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* ------------------------------------------- */
+/* Variables can be moved into a separate file */
+/* ------------------------------------------- */
+
+// Colours
+$base-bg-color: #0D6EFD;
+$base-white: #FFF;
+$base-black: #000;
+
+// Font families
+$base-font-family: 'Roboto', sans-serif;
+
+// Font weights
+$base-font-weight: 400;
+$bold-font-weight: 600;
+
+// Input width
+$base-input-width: 16em;
+
+// Spacing classes
+.mt-small {
+    margin-top: 1.5em;
+}
+
+.mt-medium {
+    margin-top: 3em;
+}
+
+.mt-large {
+    margin-top: 4em;
+}

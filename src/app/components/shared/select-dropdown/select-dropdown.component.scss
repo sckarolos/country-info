@@ -1,0 +1,10 @@
+@import "../../../../styles.scss";
+
+.label {
+    font-weight: $bold-font-weight;
+    margin-bottom: 0.35em;
+}
+
+.form-select {
+    width: $base-input-width;
+}
